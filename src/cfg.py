@@ -1,6 +1,7 @@
-from decouple import RepositoryInit, Config
+from decouple import Config, RepositoryIni
 
-config = Config(RepositoryInit("settings.ini"))
+# Especifica la ruta a tu archivo .ini
+config = Config(RepositoryIni("settings.ini"))
 
 CLIENT_ID = config("CLIENT_ID")
 CLIENT_SECRET = config("CLIENTE_SECRET")
